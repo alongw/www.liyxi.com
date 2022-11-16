@@ -11,7 +11,7 @@
 
 </script>
 
-<template>
+<!-- <template>
   <div class="Miniprogram">
     <el-image :src="require('@/assets/gh_e9be314c6626_258.jpg')" fit="cover"></el-image>
     <div class="text">
@@ -19,7 +19,7 @@
       <span>手机阅读更方便</span>
     </div>
   </div>
-</template>
+</template> -->
 
 <style lang="less" scoped>
 .Miniprogram {
@@ -28,11 +28,13 @@
   background-color: @card-background-color;
   padding: 10px;
   box-sizing: border-box;
+
   .el-image {
     border-radius: 50%;
     width: 100px;
     height: 100px;
   }
+
   div.text {
     display: flex;
     flex-direction: column;
@@ -40,11 +42,13 @@
     margin-left: 10px;
     padding: 5px 0;
     box-sizing: border-box;
+
     span {
       &:first-child {
         font-size: 18px;
         color: @text-color;
       }
+
       &:last-child {
         color: @text-color-line;
       }

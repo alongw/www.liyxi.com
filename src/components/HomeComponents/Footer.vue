@@ -9,29 +9,24 @@
 -->
 <script lang="ts" setup>
 import dayjs from 'dayjs'
-const icons = ['qq', '微信', 'github', 'email']
+const icons = ['email', '微信', 'github', 'qq']
 </script>
 
 <template>
   <div class="Footer">
     <div class="copyright">©2021-{{ dayjs().format('YYYY') }} litfa all rights reserved.</div>
     <div class="icp">
-      <a href="https://beian.miit.gov.cn/">豫ICP备2021024510号-2</a>
-      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=4101820200807">
-        <img src="./../../assets/icp.png" />
-        豫公网安备 4101820200807号
-      </a>
+      <a href="https://beian.miit.gov.cn/">粤ICP备2022046081号</a>
+
     </div>
     <div class="contact">
-      <el-popover placement="top-start" :width="200" trigger="hover">
+      <!-- <el-popover placement="top-start" :width="200" trigger="hover">
         <template #reference>
           <div class="icon" style="background-color: #12b7f5"></div>
         </template>
         <div class="popover-box">
-          <a
-            href="https://qm.qq.com/cgi-bin/qm/qr?k=KhU1Ifs9GAuPaHfsGMHM4nUst9pR58Uj&noverify=0"
-          >1585380249</a>
-          <img src="./../../assets/qq.png" alt="qq" />
+          <a href="#">10001</a>
+          <img src="#" alt="qq" />
         </div>
       </el-popover>
       <el-popover placement="top-start" :width="200" trigger="hover">
@@ -40,20 +35,20 @@ const icons = ['qq', '微信', 'github', 'email']
         </template>
         <div class="popover-box">
           Litfa_
-          <img src="./../../assets/wx.png" alt="wx" />
+          <img src="#" alt="wx" />
         </div>
       </el-popover>
       <el-popover placement="top-start" :width="200" trigger="hover">
         <template #reference>
           <div class="icon" style="background-color: #000;"></div>
         </template>
-        <a href="https://github.com/litfa" target="_black">https://github.com/litfa</a>
-      </el-popover>
+        <a href="#" target="_black">#</a>
+      </el-popover> -->
       <el-popover placement="top-start" :width="200" trigger="hover">
         <template #reference>
           <div class="icon" style="background-color: #ecb10c;"></div>
         </template>
-        <a href="mailto:admin@litf.com.cn">admin@litf.com.cn</a>
+        <a href="mailto:alongw@alongw.cn">alongw@alongw.cn</a>
       </el-popover>
     </div>
   </div>
@@ -65,22 +60,27 @@ const icons = ['qq', '微信', 'github', 'email']
   word-break: break-all;
   flex-wrap: wrap;
   color: @text-color-line;
+
   .icp {
     display: flex;
     flex-direction: column;
+
     // align-items: center;
     img {
       margin-right: 3px;
     }
+
     a {
       display: flex;
       align-items: center;
     }
   }
+
   .contact {
     display: flex;
     margin-top: 10px;
     box-sizing: border-box;
+
     .icon {
       width: 30px;
       height: 30px;
@@ -90,6 +90,7 @@ const icons = ['qq', '微信', 'github', 'email']
       justify-content: center;
       align-items: center;
       margin-right: 15px;
+
       &::after {
         content: "";
         width: 20px;
@@ -98,27 +99,33 @@ const icons = ['qq', '微信', 'github', 'email']
         background-image: url(./../../assets/icon.png);
         background-size: 20px;
       }
+
       &:nth-child(1)::after {
         background-position-y: 0;
       }
+
       &:nth-child(2)::after {
         background-position-y: -20px;
       }
+
       &:nth-child(3)::after {
         background-position-y: -40px;
       }
+
       &:nth-child(4)::after {
         background-position-y: -60px;
       }
     }
   }
 }
+
 .popover-box {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
   font-size: 20px;
+
   img {
     width: 80%;
   }

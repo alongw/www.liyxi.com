@@ -12,7 +12,7 @@
     <div class="left">
       <router-link to="/">
         <img class="logo" :src="require('@/assets/logo.webp')" alt="logo" />
-        <span class="title">Litf Blog</span>
+        <span class="title">我的技术笔记分享</span>
       </router-link>
     </div>
     <div class="right">
@@ -69,13 +69,16 @@ const tooltip = ref(true)
   background-color: @card-background-color;
   box-shadow: 0 0px 10px 5px rgba(114, 114, 114, 0.096);
   z-index: 1000;
+
   .left,
   a {
     display: flex;
     align-items: center;
+
     .logo {
       height: 38px;
     }
+
     .title {
       font-size: 26px;
       font-weight: 600;
@@ -83,11 +86,13 @@ const tooltip = ref(true)
       transition: all 0.3s;
     }
   }
+
   .right {
     height: 100%;
     margin-right: 10px;
     display: flex;
     align-items: center;
+
     .user,
     .login {
       height: 100%;
@@ -96,6 +101,7 @@ const tooltip = ref(true)
       display: flex;
       align-items: center;
     }
+
     .login {
       .i-icon-user {
         border: 1.5px #333 solid;
@@ -103,11 +109,13 @@ const tooltip = ref(true)
         padding: 3px;
       }
     }
+
     .nav {
       .el-button {
         margin: 0 5px;
       }
     }
+
     .SearchIcon {
       display: none;
     }
@@ -119,18 +127,22 @@ const tooltip = ref(true)
     .SearchIcon {
       display: block;
     }
+
     .search-position {
       display: none;
     }
   }
 }
+
 @media screen and (max-width: 400px) {
   .navBar .right {
+
     .user,
     .login {
       margin: 0 4px;
     }
   }
+
   .navBar .left .title {
     font-size: 16px;
   }

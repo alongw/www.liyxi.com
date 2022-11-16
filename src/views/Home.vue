@@ -29,7 +29,7 @@
 import HomeComponents from '@/components/HomeComponents/HomeComponents.vue'
 import HomeCards from '@/components/HomeCards/HomeCards.vue'
 import HomeSkeleton from '@/components/HomeSkeleton/HomeSkeleton.vue'
-document.title = 'Litf Blog'
+document.title = '我的技术笔记分享'
 </script>
 
 <style lang="less" scoped>
@@ -41,11 +41,13 @@ document.title = 'Litf Blog'
   max-width: 1060px;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 720px) {
   .Home {
     grid-column: 1;
     grid-template-columns: 1fr;
   }
+
   .HomeComponents {
     display: none;
   }

@@ -47,8 +47,9 @@ module.exports = {
     config
       .plugin('html')
       .tap(args => {
-        args[0].title = 'Litf Blog'
+        args[0].title = '我的技术笔记分享'
         return args
       })
-  }
+  },
+  publicPath: './'
 }
